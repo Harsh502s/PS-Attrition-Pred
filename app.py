@@ -43,7 +43,11 @@ def add_sidebar():
             input_key[key] = st.sidebar.slider(label, 0, 100, 50, key=key)
         elif label in ['Daily Rate','Monthly Income','Monthly Rate']:
             input_key[key] = st.sidebar.number_input(label, 0, 100000, 50000)
-        else:
+        elif label in ['Environment Satisfaction','Job Involvement','Job Satisfaction','Relationship Satisfaction',
+                    'Work Life Balance']:
+            input_key[key] = st.sidebar.selectbox(label, [1,2,3,4])
+        elif label in ['Business Travel Frequently','Over Time','Department Sales']:
+                    
             pass
     return input_key
 
