@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 def add_sidebar():
     st.sidebar.header("Churn Prediction Parameters")
 
